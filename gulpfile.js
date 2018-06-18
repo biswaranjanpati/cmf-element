@@ -2,19 +2,22 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var concat = require('gulp-concat');
 var jsImport = require('gulp-js-import');
+var clean = require('gulp-clean');
 
 
 gulp.task('sass', function() {
 
 	return gulp.src('./scss/main.scss')
-        .pipe(sass())
+		.pipe(sass())
+		.pipe(clean())
 		.pipe(gulp.dest('./assets/css'));
 });
 
 gulp.task('js', function() {
 	return gulp.src('js/*.js')
         .pipe(jsImport({hideConsole: true}))
-        .pipe(concat('main.js'))
+		.pipe(concat('main.js'))
+		.pipe(clean())
 		.pipe(gulp.dest('./assets/js'));
 });
 

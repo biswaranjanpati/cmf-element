@@ -30,5 +30,13 @@
         "backgroundColor": "",
         "order": -2,
         "has_js": "true"
+    },
+    {
+        "component": "component1",
+        "category": "molecules",
+        "description": "My first component",
+        "backgroundColor": "",
+        "order": -3,
+        "has_js": "false"
     }
 ]

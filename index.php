@@ -46,6 +46,7 @@
 
 <body>
 
+<?php include("components/atoms/button.php"); ?>
 
 
 <div class="indexBlock">

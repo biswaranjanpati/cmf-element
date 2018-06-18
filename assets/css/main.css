@@ -2,7 +2,7 @@
 /* scss/readme/_sidebars.scss */
 /* scss/atoms/_button.scss */
 .button {
-  background-color: red; }
+  background-color: lightblue; }
 
 /* scss/atoms/_icon-with-text.scss */
 a.iwt {
@@ -18,3 +18,5 @@ a.iwt:hover {
   color: white;
   text-align: center;
   padding: 20px; }
+
+/* scss/molecules/_component1.scss */
