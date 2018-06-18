@@ -1,0 +1,15 @@
+/* scss/atoms/_icon-with-text.scss */
+a.iwt{
+    background:pink;
+    display:inline-block;
+    color:black;
+    text-align:center;
+    padding:20px;
+}
+a.iwt:hover{
+    background:blue;
+    display:inline-block;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
