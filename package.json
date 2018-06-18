@@ -1,0 +1,22 @@
+{
+  "name": "cmf-elements",
+  "version": "1.0.0",
+  "description": "Atomic Docs is a front end style guide generator and component manager. Atomic Docs is built in PHP and Sass. Inspired by Brad Frost's Atomic Design principles.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssimport": "^6.0.1",
+    "gulp-js-import": "^1.0.6",
+    "gulp-sass": "^4.0.1"
+  },
+  "dependencies": {
+    "node-sass": "^4.9.0"
+  }
+}

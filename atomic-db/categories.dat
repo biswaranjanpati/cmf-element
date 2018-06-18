@@ -1,0 +1,26 @@
+[
+    {
+        "category": "readme",
+        "order": 0
+    },
+    {
+        "category": "atoms",
+        "order": 4
+    },
+    {
+        "category": "molecules",
+        "order": 5
+    },
+    {
+        "category": "organisms",
+        "order": 6
+    },
+    {
+        "category": "templates",
+        "order": 7
+    },
+    {
+        "category": "pages",
+        "order": 8
+    }
+]
