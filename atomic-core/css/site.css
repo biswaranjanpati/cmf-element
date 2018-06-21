@@ -1560,6 +1560,9 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
 #atomsWrap .component .source .title{
     margin-top: 48px;
 }
+#atomsWrap .component .source table{
+    min-width: 800px;
+}
 /* End Biswa creadted */
     
 
