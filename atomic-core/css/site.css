@@ -133,7 +133,9 @@ License: MIT
 .sp-top {
   position: relative;
   width: 100%;
-  display: inline-block; }
+  display: inline-block; 
+    
+}
 
 .sp-top-inner {
   position: absolute;
@@ -798,14 +800,16 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
   #atomsWrap .aa_label-is-open {
     font-size: 20px !important; }
   #atomsWrap .atomic-h1 {
-    margin-bottom: 24px;
-    margin-top: 0;
+    margin-bottom: 39px;/* Biswa changed 24 to 39px*/
+    margin-top: 32px; /* Biswa changed 0 to 32px*/
     color: #3d4a57;
     font-weight: 300;
     font-family: "Open Sans", sans-serif;
     font-size: 29px;
     padding: 6px 0;
-    line-height: 1.1; }
+    line-height: 1.1;
+    text-transform: capitalize; /* Biswa added*/
+}
   #atomsWrap .formGroup-check {
     margin-bottom: 24px; }
     #atomsWrap .formGroup-check label {
@@ -868,7 +872,7 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
   #atomsWrap .active .aa_dir__dirNameGroup__icon {
     display: inline; }
   #atomsWrap .aa_dir__dirNameGroup__icon {
-    color: #00aff0;
+    /*color: #00aff0; Biswa commented */
     float: left;
     margin-left: 17px;
     margin-top: 10px;
@@ -946,7 +950,9 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
     color: #7A7A7A;
     margin-bottom: 20px;
     max-width: 700px;
-    font-weight: 300; }
+      padding-left: 45px; /*Biswa added*/
+    /* font-weight: 300; Biswa commented */
+}
   #atomsWrap .atomic-search {
     padding: 15px;
     background: #2988ac;
@@ -1090,8 +1096,10 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
   #atomsWrap .atoms-main {
     box-sizing: border-box;
     padding: 40px;
-    padding-left: 240px;
+    padding-left: 270px; /* Biswa changed 240 to 270 */
     width: 100%;
+      max-width: 1280px;/*Added by Biswa*/
+      margin: auto;/*Added by Biswa*/
     padding-top: 0; }
   #atomsWrap .compTitle, #atomsWrap .compNotes, #atomsWrap .nav-tabs-atomic {
     font-family: "Open Sans", sans-serif; }
@@ -1109,42 +1117,55 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
       width: 100%; } }
   #atomsWrap .atoms-side {
     height: 100%;
-    background-size: 200px;
+    background-size: 270px;
     background: #f7f7f7;
-    color: #fff;
+   /* color: #fff; Biswa commented */
     position: fixed;
     left: 0;
     top: 0;
     z-index: 5000;
-    width: 200px;
+    width: 250px; /*Biswa modifed 200 to 250px */
     font-family: "Open Sans", sans-serif;
-    font-weight: 300; }
-    #atomsWrap .atoms-side nav {
+    /* font-weight: 300; Biswa commented */
+      text-transform: capitalize; /* Biswa added */
+      counter-reset: section; /* Biswa added */
+      
+}
+    /* #atomsWrap .atoms-side nav {
       margin-left: 24px;
-      margin-left: 24px; }
-    #atomsWrap .atoms-side a {
+      margin-left: 24px; } Biswa commented */
+  #atomsWrap .atoms-side a {
       text-decoration: none; }
+#atomsWrap .atoms-side li.active a {
+      text-decoration: none;
+      
+}
+
   #atomsWrap .atoms-nav {
     list-style: none;
     padding: 0;
-    margin-top: 1px; }
+   /* margin-top: 1px; Biswa commented */
+      margin: 0 0 0 30px;
+}
   #atomsWrap .aa_dir__dirNameGroup__name {
     display: block;
     padding: 6px 38px;
     padding-left: 0;
     margin-left: 38px;
-    color: #7a7a7a;
+    color: #333333; /*Biswa changed #7a7a7a to new value */
     font-size: 15px; }
   #atomsWrap .aa_dir__dirNameGroup__name:hover {
     text-decoration: none; }
   #atomsWrap .aa_addFile {
-    color: #9DA0A0;
+    color: #ee393d; /* Biswa changed color #9DA0A0 */
+      font-size: 13px; /* Biswa changed size from 10  */
     margin-bottom: 10px;
-    font-size: 10px;
-    padding: 4px 9px;
+    padding: 4px 9px; 
     display: inline-block;
     border-radius: 4px;
-    margin-left: 25px; }
+    margin-left: 25px;
+          border: 1px solid #f9acad; /* Biswa added */
+}
   #atomsWrap .aa_fileSection__file {
     padding-left: 39px; }
     #atomsWrap .aa_fileSection__file .fa {
@@ -1152,8 +1173,10 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
       position: relative;
       top: 1px; }
     #atomsWrap .aa_fileSection__file a {
-      color: #7a7a7a;
-      font-size: 14px; }
+      color: #333333; /* Biswa changed from #7a7a7a */
+      font-size: 14px; 
+       
+}
   #atomsWrap .aa_fileSection {
     padding-left: 0; }
     #atomsWrap .aa_fileSection li {
@@ -1170,9 +1193,12 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
     background: none;
     padding: 12px 20px;
     font-size: 14px;
-    text-align: center; }
+    text-align: center; 
+      margin-bottom: 35px /* Biswa Added */
+}
   #atomsWrap .navIcon {
-    color: #00aff0; }
+    color: #5755d9; /* Biswa modifed #00aff0 to the new value*/
+}
   #atomsWrap .atoms-side_show {
     display: none;
     background: #00aff0;
@@ -1215,17 +1241,24 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
     z-index: 7000; }
     #atomsWrap .atoms-side_show-small:hover, #atomsWrap .smallOpen:hover {
       opacity: 1; }
+/* Biswa created */
+#atomsWrap .catAdd{
+    text-align: center;
+    margin-top: 60px;
+}/* End Biswa created */
   #atomsWrap .catAdd a {
-    color: #9DA0A0;
-    font-size: 10px;
-    padding: 4px 9px;
+    color: #FFFFFF; /*Biswa changed from 9DA0A0 */
+      background: #ee393d; /* Biswa added */
+     font-size: 15px; /* Biswa changed it from 10px */
+    padding: 8px 22px; /* Biswa changed from 4px 9px */
     display: inline-block;
     border-radius: 4px;
-    margin-left: 15px;
+   /* margin-left: 15px; Biswa commented */
     position: relative;
-    border: 1px dashed; }
+   /* border: 1px dashed; Biswa commented */
+}
   #atomsWrap .catAdd .fa {
-    font-size: 12px;
+    /*font-size: 12px; Biswa commented */
     margin-right: 4px; }
   #atomsWrap .aa_dir .fa-pencil-square-o {
     display: none; }
@@ -1314,12 +1347,13 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
       width: 100% !important;
       padding: 25px; } }
   #atomsWrap .codeBlocks .nav-tabs-atomic {
-    border: 1px solid #dadada;
-    margin-top: 0;
+   /* border: 1px solid #dadada; Biswa commented */
+    margin-top: 0; /*Biswa commented*/
+      margin:0; /*Biswa added*/
     background: #fff; }
   #atomsWrap .codeBlocks .nav-tabs-atomic > li.active > a, #atomsWrap .codeBlocks .nav-tabs-atomic > li.active > a:focus, #atomsWrap .codeBlocks .nav-tabs-atomic > li.active > a:hover {
     border: none;
-    border-bottom: 3px solid #00aff0;
+    border-bottom: 3px solid #f96e7d; /* Biswa changed color 00aff0 */
     color: inherit; }
   #atomsWrap .codeBlocks .nav-atomic > li > a:focus, #atomsWrap .codeBlocks .nav-atomic > li > a:hover {
     background: none;
@@ -1330,21 +1364,24 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
     border: none;
     border-radius: 0;
     text-decoration: none;
-    font-size: 12px;
+    font-size: small; /* Biswa changed 12 to small */
     color: #929292;
-    font-weight: 300; }
+   /* font-weight: 300; Biswa commented */
+}
   #atomsWrap .tabForm {
     display: inline-block;
-    margin-bottom: 0; }
+    margin-bottom: 0; 
+      margin-top: 0.4rem; /* Biswa added */
+}
     #atomsWrap .tabForm label {
       margin-right: 0;
       line-height: 1;
       border: none;
       border-radius: 0;
       text-decoration: none;
-      font-size: 12px;
+      font-size: small; /* Biswa changed 12 to small */
       color: #929292;
-      font-weight: 300;
+      /* font-weight: 300; Biswa commented */
       padding: 10px 15px;
       display: block; }
     #atomsWrap .tabForm .formInput-check + label span {
@@ -1362,7 +1399,7 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
     position: relative;
     z-index: 2;
     background-color: #f7f7f7;
-    border: 1px solid #dadada;
+   /* border: 1px solid #dadada; Biswa commented */
     border-top: 0;
     max-height: 200px;
     overflow: auto; }
@@ -1470,9 +1507,25 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
   #atomsWrap .compTitle {
     display: block;
     margin-bottom: 12px;
-    color: #00AFF0;
-    padding-left: 3px;
-    max-height: 25px; }
+    color: #5755d9; /* Biswa changed 00AFF0 to 5755d9 */
+   /* padding-left: 3px; Biswa commented */
+    /* max-height: 25px; Biswa Commented */
+      text-transform: capitalize; /* Biswa added*/
+      font-size: larger /* Biswa added */     
+}
+/* Biswa added this below section */ 
+#atomsWrap .compTitle::before{
+      counter-increment: section;  
+      content: counter(section);   
+      display:inline-block;
+      width:30px;
+      height:30px;
+      background:#5755d9;
+      border-radius:50%;
+      color:white;
+      text-align:center;
+    margin-right: 10px;
+}/* Ended Biswa added this below section */ 
     #atomsWrap .compTitle a {
       text-decoration: none;
       color: inherit;
@@ -1488,12 +1541,29 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
   #atomsWrap .u-bgWhite {
     background: #fff; }
   #atomsWrap .atoms-side_hide .fa {
-    margin: 0 9px;
+    margin: 0 15px; /* Biswa changed 9 to 15*/
     display: inline-block; }
   #atomsWrap .atoms-side_hide .fa-code {
     font-weight: bold; }
   #atomsWrap .component {
-    margin-bottom: 24px; }
+    margin-bottom: 24px; 
+      padding: 100px 0;
+      text-align: center;
+}
+
+/* Biswa creadted */
+#atomsWrap .component .source{
+    display: inline-block;
+    width: auto;
+    text-align: left;
+}
+#atomsWrap .component .source .title{
+    margin-top: 48px;
+}
+/* End Biswa creadted */
+    
+
+
   #atomsWrap .component-bg {
     padding: 20px; }
   #atomsWrap .bgColorWrap {
@@ -1574,7 +1644,7 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
     top: 0; }
   #atomsWrap .se-pre-con {
     position: fixed;
-    padding-left: 200px;
+    padding-left: 270px; /* Biswa changed 200 to 270 */
     right: 0;
     top: 0px;
     width: 100%;

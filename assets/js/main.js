@@ -1,5 +1,7 @@
+/* js/basestyles.js */
 /* js/button.js */
 console.log("Hello Biswa")
-/* js/icon-with-text.js */
+/* js/Headings.js */
 console.log("hi There");
+/* js/paragraph.js */
 /* js/row.js */

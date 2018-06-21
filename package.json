@@ -17,7 +17,5 @@
     "gulp-js-import": "^1.0.6",
     "gulp-sass": "^4.0.1"
   },
-  "dependencies": {
-    "node-sass": "^4.9.0"
-  }
+  "dependencies": {}
 }

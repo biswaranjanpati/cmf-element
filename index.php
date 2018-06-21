@@ -1,6 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html class="no-js" lang="en">
 <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="This is a description">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
     <title>Title of the document</title>
 
     <?php include("atomic-head.php"); ?>
@@ -46,7 +51,6 @@
 
 <body>
 
-<?php include("components/atoms/button.php"); ?>
 
 
 <div class="indexBlock">

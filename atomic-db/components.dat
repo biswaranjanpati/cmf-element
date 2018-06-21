@@ -24,19 +24,59 @@
         "has_js": "true"
     },
     {
-        "component": "icon-with-text",
+        "component": "Headings",
         "category": "atoms",
-        "description": "Icon with text",
+        "description": "This is sample headings",
         "backgroundColor": "",
         "order": -2,
         "has_js": "true"
     },
     {
-        "component": "component1",
-        "category": "molecules",
-        "description": "My first component",
+        "component": "basestyles",
+        "category": "base",
+        "description": "Base CSS",
         "backgroundColor": "",
-        "order": -3,
+        "order": -4,
+        "has_js": "true"
+    },
+    {
+        "component": "paragraph",
+        "category": "atoms",
+        "description": "This paragraph examples",
+        "backgroundColor": "",
+        "order": -4,
+        "has_js": "true"
+    },
+    {
+        "component": "list",
+        "category": "atoms",
+        "description": "These are list item styles",
+        "backgroundColor": "",
+        "order": -5,
+        "has_js": "false"
+    },
+    {
+        "component": "table",
+        "category": "atoms",
+        "description": "This is example of Table elements",
+        "backgroundColor": "",
+        "order": -6,
+        "has_js": "false"
+    },
+    {
+        "component": "formelements",
+        "category": "atoms",
+        "description": "These are form elements",
+        "backgroundColor": "",
+        "order": -7,
+        "has_js": "false"
+    },
+    {
+        "component": "Media",
+        "category": "atoms",
+        "description": "These are Media examples",
+        "backgroundColor": "",
+        "order": -8,
         "has_js": "false"
     }
 ]
