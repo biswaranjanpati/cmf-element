@@ -20,7 +20,7 @@
         "category": "atoms",
         "description": "Default button",
         "backgroundColor": "",
-        "order": 2,
+        "order": 3,
         "has_js": "true"
     },
     {
@@ -52,7 +52,7 @@
         "category": "atoms",
         "description": "These are list item styles",
         "backgroundColor": "",
-        "order": 4,
+        "order": 5,
         "has_js": "false"
     },
     {
@@ -60,7 +60,7 @@
         "category": "atoms",
         "description": "This is example of Table elements",
         "backgroundColor": "",
-        "order": 5,
+        "order": 6,
         "has_js": "false"
     },
     {
@@ -68,7 +68,7 @@
         "category": "atoms",
         "description": "These are form elements",
         "backgroundColor": "",
-        "order": 3,
+        "order": 4,
         "has_js": "false"
     },
     {
@@ -76,7 +76,15 @@
         "category": "atoms",
         "description": "These are Media examples",
         "backgroundColor": "",
-        "order": 6,
+        "order": 7,
+        "has_js": "false"
+    },
+    {
+        "component": "blockquote",
+        "category": "atoms",
+        "description": "This is a Blockquote",
+        "backgroundColor": "",
+        "order": 2,
         "has_js": "false"
     }
 ]

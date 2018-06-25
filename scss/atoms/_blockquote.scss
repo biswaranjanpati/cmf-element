@@ -1,0 +1,12 @@
+/* scss/atoms/_blockquote.scss */
+
+// Blockquote
+blockquote {
+  border-left: $border-width-lg solid $border-color;
+  margin-left: 0;
+  padding: $unit-2 $unit-4;
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
