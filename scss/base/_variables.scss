@@ -40,6 +40,14 @@ $link-color: $primary-color !default;
 $link-color-dark: darken($link-color, 10%) !default;
 $link-color-light: lighten($link-color, 10%) !default;
 
+//Social colors
+$fb-color: #3B5998 !default;
+$twit-color: #1DA1F2 !default;
+$gplus-color: #DB4437 !default;
+$insta-color: #262626 !default;
+$youtube-color: #cc181e !default;
+
+
 // Fonts
 // Credit: https://www.smashingmagazine.com/2015/11/using-system-ui-fonts-practical-guide/
 $base-font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto !default;

@@ -1,0 +1,27 @@
+/* scss/molecules/_ministercard.scss */
+
+//Profile styles
+.profile{
+    text-align:center; 
+    background: $bg-color-light;
+    border: $border-width solid $border-color;
+    border-radius: $border-radius;
+    display: flex;
+    flex-direction: column;
+    
+    .profile-img,
+    .profile-header, 
+    .profile-page-link, 
+    .profile-social-link{
+        padding: $layout-spacing-lg;
+        padding-bottom: 0;
+        
+        &:last-child {
+          padding-bottom: $layout-spacing-lg;
+        }
+    }
+    .profile-social-bar{
+        padding-top: $layout-spacing-lg; 
+        padding-bottom: 0;
+    }
+}

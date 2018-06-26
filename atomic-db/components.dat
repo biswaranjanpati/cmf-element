@@ -53,7 +53,7 @@
         "description": "These are list item styles",
         "backgroundColor": "",
         "order": 5,
-        "has_js": "false"
+        "has_js": "true"
     },
     {
         "component": "table",
@@ -85,6 +85,14 @@
         "description": "This is a Blockquote",
         "backgroundColor": "",
         "order": 2,
+        "has_js": "false"
+    },
+    {
+        "component": "ministercard",
+        "category": "molecules",
+        "description": "This is the Card design of Minister's photo",
+        "backgroundColor": "",
+        "order": -10,
         "has_js": "false"
     }
 ]

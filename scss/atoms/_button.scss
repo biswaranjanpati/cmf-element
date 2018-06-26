@@ -111,6 +111,23 @@
   &.btn-error {
     @include button-variant($error-color);
   }
+  
+  //Social icons
+    &.btn-fb{
+        @include button-variant($fb-color);
+    }
+    &.btn-twit{
+        @include button-variant($twit-color);
+    }
+    &.btn-gplus{
+        @include button-variant($gplus-color);
+    }
+    &.btn-insta{
+        @include button-variant($insta-color);
+    }
+    &.btn-youtube{
+        @include button-variant($youtube-color);
+    }
 
   // Button Link
   &.btn-link {

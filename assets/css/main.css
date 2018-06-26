@@ -967,6 +967,16 @@ a.text-error:visited {
     transform: translate(-50%, -40%) rotate(-135deg);
     width: .5em; }
 
+.feather {
+  width: 100%;
+  height: 100%;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: none;
+  padding: 5%; }
+
 .label {
   border-radius: 0.1rem;
   line-height: 1.2;
@@ -1241,6 +1251,91 @@ blockquote {
       border-color: #e11318;
       color: #fff; }
     .btn.btn-error.loading::after, button.btn-error.loading::after {
+      border-bottom-color: #fff;
+      border-left-color: #fff; }
+  .btn.btn-fb, button.btn-fb {
+    background: #3B5998;
+    border-color: #37538d;
+    color: #fff; }
+    .btn.btn-fb:focus, button.btn-fb:focus {
+      box-shadow: 0 0 0 0.1rem rgba(59, 89, 152, 0.2); }
+    .btn.btn-fb:focus, .btn.btn-fb:hover, button.btn-fb:focus, button.btn-fb:hover {
+      background: #385591;
+      border-color: #344e86;
+      color: #fff; }
+    .btn.btn-fb:active, .btn.btn-fb.active, button.btn-fb:active, button.btn-fb.active {
+      background: #314a7e;
+      border-color: #2d4373;
+      color: #fff; }
+    .btn.btn-fb.loading::after, button.btn-fb.loading::after {
+      border-bottom-color: #fff;
+      border-left-color: #fff; }
+  .btn.btn-twit, button.btn-twit {
+    background: #1DA1F2;
+    border-color: #0f9bf1;
+    color: #fff; }
+    .btn.btn-twit:focus, button.btn-twit:focus {
+      box-shadow: 0 0 0 0.1rem rgba(29, 161, 242, 0.2); }
+    .btn.btn-twit:focus, .btn.btn-twit:hover, button.btn-twit:focus, button.btn-twit:hover {
+      background: #139df1;
+      border-color: #0d95e8;
+      color: #fff; }
+    .btn.btn-twit:active, .btn.btn-twit.active, button.btn-twit:active, button.btn-twit.active {
+      background: #0d8fdf;
+      border-color: #0c85d0;
+      color: #fff; }
+    .btn.btn-twit.loading::after, button.btn-twit.loading::after {
+      border-bottom-color: #fff;
+      border-left-color: #fff; }
+  .btn.btn-gplus, button.btn-gplus {
+    background: #DB4437;
+    border-color: #d9382a;
+    color: #fff; }
+    .btn.btn-gplus:focus, button.btn-gplus:focus {
+      box-shadow: 0 0 0 0.1rem rgba(219, 68, 55, 0.2); }
+    .btn.btn-gplus:focus, .btn.btn-gplus:hover, button.btn-gplus:focus, button.btn-gplus:hover {
+      background: #d93c2e;
+      border-color: #d33426;
+      color: #fff; }
+    .btn.btn-gplus:active, .btn.btn-gplus.active, button.btn-gplus:active, button.btn-gplus.active {
+      background: #ca3124;
+      border-color: #bd2e22;
+      color: #fff; }
+    .btn.btn-gplus.loading::after, button.btn-gplus.loading::after {
+      border-bottom-color: #fff;
+      border-left-color: #fff; }
+  .btn.btn-insta, button.btn-insta {
+    background: #262626;
+    border-color: #1e1e1e;
+    color: #fff; }
+    .btn.btn-insta:focus, button.btn-insta:focus {
+      box-shadow: 0 0 0 0.1rem rgba(38, 38, 38, 0.2); }
+    .btn.btn-insta:focus, .btn.btn-insta:hover, button.btn-insta:focus, button.btn-insta:hover {
+      background: #212121;
+      border-color: #191919;
+      color: #fff; }
+    .btn.btn-insta:active, .btn.btn-insta.active, button.btn-insta:active, button.btn-insta.active {
+      background: #141414;
+      border-color: #0d0d0d;
+      color: #fff; }
+    .btn.btn-insta.loading::after, button.btn-insta.loading::after {
+      border-bottom-color: #fff;
+      border-left-color: #fff; }
+  .btn.btn-youtube, button.btn-youtube {
+    background: #cc181e;
+    border-color: #be161c;
+    color: #fff; }
+    .btn.btn-youtube:focus, button.btn-youtube:focus {
+      box-shadow: 0 0 0 0.1rem rgba(204, 24, 30, 0.2); }
+    .btn.btn-youtube:focus, .btn.btn-youtube:hover, button.btn-youtube:focus, button.btn-youtube:hover {
+      background: #c3171d;
+      border-color: #b5151b;
+      color: #fff; }
+    .btn.btn-youtube:active, .btn.btn-youtube.active, button.btn-youtube:active, button.btn-youtube.active {
+      background: #ac1419;
+      border-color: #9e1317;
+      color: #fff; }
+    .btn.btn-youtube.loading::after, button.btn-youtube.loading::after {
       border-bottom-color: #fff;
       border-left-color: #fff; }
   .btn.btn-link, button.btn-link {
@@ -1774,7 +1869,7 @@ caption {
 
 /* scss/atoms/_Media.scss */
 .img-responsive {
-  display: block;
+  /*display: block;*/
   height: auto;
   max-width: 100%; }
 
@@ -1823,3 +1918,26 @@ video.video-responsive {
   .figure .figure-caption {
     color: #667189;
     margin-top: 0.4rem; }
+
+/* scss/molecules/_ministercard.scss */
+.profile {
+  text-align: center;
+  background: #fff;
+  border: 0.05rem solid #e7e9ed;
+  border-radius: 0.1rem;
+  display: flex;
+  flex-direction: column; }
+  .profile .profile-img,
+  .profile .profile-header,
+  .profile .profile-page-link,
+  .profile .profile-social-link {
+    padding: 0.8rem;
+    padding-bottom: 0; }
+    .profile .profile-img:last-child,
+    .profile .profile-header:last-child,
+    .profile .profile-page-link:last-child,
+    .profile .profile-social-link:last-child {
+      padding-bottom: 0.8rem; }
+  .profile .profile-social-bar {
+    padding-top: 0.8rem;
+    padding-bottom: 0; }
