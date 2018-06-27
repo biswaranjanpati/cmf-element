@@ -1018,6 +1018,30 @@ a.text-error:visited {
     opacity: 1;
     transform: translateY(0); } }
 
+.dropdown {
+  display: inline-block;
+  position: relative; }
+  .dropdown .menu {
+    animation: slide-down .15s ease 1;
+    display: none;
+    left: 0;
+    max-height: 50vh;
+    overflow-y: auto;
+    position: absolute;
+    top: 100%; }
+  .dropdown.dropdown-right .menu {
+    left: auto;
+    right: 0; }
+  .dropdown.active .menu,
+  .dropdown .dropdown-toggle:focus + .menu,
+  .dropdown .dropdown-toggle:hover + .menu,
+  .dropdown .menu:hover {
+    display: block;
+    position: relative; }
+  .dropdown .btn-group .dropdown-toggle:nth-last-child(2) {
+    border-bottom-right-radius: 0.1rem;
+    border-top-right-radius: 0.1rem; }
+
 *,
 *::before,
 *::after {
@@ -1923,8 +1947,6 @@ video.video-responsive {
 .profile {
   text-align: center;
   background: #fff;
-  border: 0.05rem solid #e7e9ed;
-  border-radius: 0.1rem;
   display: flex;
   flex-direction: column; }
   .profile .profile-img,
@@ -1941,3 +1963,42 @@ video.video-responsive {
   .profile .profile-social-bar {
     padding-top: 0.8rem;
     padding-bottom: 0; }
+
+/* scss/molecules/_brandinfo.scss */
+.brandinfo {
+  font-size: 0.7rem;
+  line-height: 1.2rem; }
+  .brandinfo a {
+    padding: 0.4rem;
+    display: table-cell;
+    border-right: 0.05rem solid #e7e9ed; }
+    .brandinfo a:last-child {
+      border-right: none; }
+    .brandinfo a span {
+      display: block; }
+
+.department a {
+  padding: 0.2rem 0.4rem;
+  line-height: 0.8rem; }
+  .department a:first-child {
+    text-align: right; }
+
+@media (max-width: 600px) {
+  .brandinfo {
+    display: flex;
+    text-align: center;
+    justify-content: center; }
+    .brandinfo a {
+      padding: 0.2rem 0.4rem; }
+  .department {
+    display: inherit; }
+    .department a {
+      display: block;
+      border-right: none;
+      text-align: center;
+      justify-content: center;
+      padding: 0.4rem; }
+      .department a:first-child {
+        text-align: center; } }
+
+/* scss/molecules/_accessibilitybar.scss */

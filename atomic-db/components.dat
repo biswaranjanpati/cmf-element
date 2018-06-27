@@ -94,5 +94,21 @@
         "backgroundColor": "",
         "order": -10,
         "has_js": "false"
+    },
+    {
+        "component": "brandinfo",
+        "category": "molecules",
+        "description": "Information of Ministry or Department",
+        "backgroundColor": "",
+        "order": -11,
+        "has_js": "false"
+    },
+    {
+        "component": "accessibilitybar",
+        "category": "molecules",
+        "description": "This is a bar containing all accessibility feature",
+        "backgroundColor": "",
+        "order": -12,
+        "has_js": "false"
     }
 ]

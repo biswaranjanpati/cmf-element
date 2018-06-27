@@ -1,0 +1,58 @@
+/* scss/molecules/_brandinfo.scss */
+
+.brandinfo{
+    font-size:$font-size-sm;
+    line-height: $line-height;
+    
+    a{
+        padding: $layout-spacing;
+        display: table-cell;
+        border-right: $border-width solid $border-color;
+        
+        &:last-child{
+            border-right: none;
+        }
+        
+        span{
+            display: block;
+        }
+    }
+}
+
+.department a{
+    padding: $layout-spacing-sm $layout-spacing;
+    line-height: $line-height-sm;
+    
+    &:first-child{
+        text-align: right;
+    }
+}
+
+@media (max-width: $size-sm) {
+    .brandinfo{
+        display: flex;
+        text-align: center;
+        justify-content: center; 
+        
+        a{
+            padding: $layout-spacing-sm $layout-spacing;
+        }
+    }
+    
+    .department{
+        display: inherit;
+
+        a{ 
+            display: block;
+            border-right: none;
+            text-align: center;
+            justify-content: center;
+            padding: $layout-spacing;
+            
+            &:first-child{
+                text-align: center;
+            }
+            
+         }
+     }
+}

@@ -1113,7 +1113,7 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
     margin-bottom: 50px; }
   @media (max-width: 823px) {
     #atomsWrap .atoms-main {
-      padding-left: 20px !important;
+      padding: 7px !important;
       width: 100%; } }
   #atomsWrap .atoms-side {
     height: 100%;
