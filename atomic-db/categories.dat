@@ -1,30 +1,30 @@
 [
     {
         "category": "readme",
-        "order": 0
-    },
-    {
-        "category": "atoms",
-        "order": 4
-    },
-    {
-        "category": "molecules",
-        "order": 5
-    },
-    {
-        "category": "organisms",
         "order": 6
     },
     {
+        "category": "atoms",
+        "order": 1
+    },
+    {
+        "category": "molecules",
+        "order": 2
+    },
+    {
+        "category": "organisms",
+        "order": 3
+    },
+    {
         "category": "templates",
-        "order": 7
+        "order": 4
     },
     {
         "category": "pages",
-        "order": 8
+        "order": 5
     },
     {
         "category": "base",
-        "order": 7
+        "order": 0
     }
 ]

@@ -1,0 +1,141 @@
+/* scss/molecules/_dropdown.scss */
+
+
+// Menus
+.menu {
+  @include shadow-variant(.05rem);
+  background: $bg-color-light;
+  border-radius: $border-radius;
+  list-style: none;
+  margin: 0;
+  min-width: $control-width-xs;
+  padding: $unit-2;
+  transform: translateY($layout-spacing-sm);
+  z-index: $zindex-3;
+
+  &.menu-nav {
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .menu-item {
+    margin-top: 0;
+    padding: 0 $unit-2;
+    text-decoration: none;
+    user-select: none;
+
+    & > a {
+      border-radius: $border-radius;
+      color: inherit;
+      display: block;
+      margin: 0 (-$unit-2);
+      padding: $unit-1 $unit-2;
+      text-decoration: none;
+      &:focus,
+      &:hover {
+        background: $primary-secondary-color;
+        color: $primary-color;
+      }
+      &:active,
+      &.active {
+        background: $primary-secondary-color;
+        color: $primary-color;
+      }
+    }
+
+    .form-checkbox,
+    .form-radio,
+    .form-switch {
+      margin: $unit-h 0;
+    }
+
+    & + .menu-item {
+      margin-top: $unit-1;
+    }
+  }
+
+  .menu-badge {
+    float: right;
+    padding: $unit-1 0;
+
+    .btn {
+      margin-top: -$unit-h;
+    }
+  }
+}
+
+// Dropdown
+.dropdown {
+  display: inline-block;
+  position: relative;
+
+  .menu {
+    animation: slide-down .15s ease 1;
+    display: none;
+    left: 0;
+    //max-height: 100vh;
+   // overflow-y: auto;
+    position: absolute;
+    top: 100%;
+      
+      
+      .menu{
+            animation: slide-right .15s ease 1;
+            display: none;
+            left: $control-width-xs;
+            //max-height: 100vh;
+           // overflow-y: auto;
+            position: absolute;
+            top: 0;
+      }
+      
+  }
+
+  &.active .menu,
+  .dropdown-toggle:focus + .menu,
+  &:focus-within > .menu
+  //.menu:hover 
+    {
+        display: block;
+    }
+    
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+        .menu{
+            display: block;
+            left:-9999px
+        }
+         
+          .dropdown-toggle:focus + .menu,
+          .menu:hover 
+            {
+                display: block;
+                left: 0;
+                
+                .menu{
+                   left: 160px;
+                }
+            }
+    }
+   
+     
+    
+    
+  &.dropdown-right {
+    .menu {
+      left: auto;
+      right: 0;
+    }
+  }
+    
+  
+  
+   
+  
+  // Fix dropdown-toggle border radius in button groups
+  .btn-group {
+    .dropdown-toggle:nth-last-child(2) {
+      border-bottom-right-radius: $border-radius;
+      border-top-right-radius: $border-radius;
+    }
+  }
+}

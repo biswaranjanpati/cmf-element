@@ -1,13 +1,24 @@
 <!-- components/molecules/accessibilitybar.twig -->
 
-<div class="accessibilitybar dropdown">
-  <a class="btn btn-link dropdown-toggle" tabindex="0">
-    dropdown menu <i class="icon icon-caret"></i>
+<div class="accessibilitybar dropdown" aria-label="Accessibility Menu" >
+  <a class="btn btn-link dropdown-toggle" tabindex="0" aria-haspopup="true" aria-expanded="false">
+    Accessibility <i class="icon icon-caret"></i>
   </a>
   <!-- menu component -->
-  <ul class="menu">
-    <li class="menu-item"><a href="#dropdowns">Slack</a></li>
-    <li class="menu-item"><a href="#dropdowns">Hipchat</a></li>
-    <li class="menu-item"><a href="#dropdowns">Skype</a></li>
+  <ul class="menu" role="menu">
+    <li class="menu-item" role="menuitem">
+        <a class="dropdown-toggle" tabindex="0" aria-haspopup="true" aria-expanded="false">Slack</a>
+        <ul class="submenu">
+            <li>A</li>
+            <li class="menu-item" role="menuitem">
+                <a title="Decrease Font Size" href="#">Decrease Font Size</a>
+            </li>
+            <li class="menu-item" role="menuitem">
+                <a title="Increase Font Size" href="#">Increase Font Size</a>
+            </li>
+        </ul>
+    </li>
+    <li class="menu-item" role="menuitem"><a href="#dropdowns">Hipchat</a></li>
+    <li class="menu-item" role="menuitem"><a href="#dropdowns">Skype</a></li>
   </ul>
 </div>

@@ -1,0 +1,36 @@
+<!-- components/molecules/dropdown.twig -->
+
+
+<div class="accessibilitybar dropdown" aria-label="Menu" >
+  <a class="btn dropdown-toggle" tabindex="0" aria-haspopup="true" aria-expanded="true">
+    Dropdown <i class="icon icon-caret"></i>
+  </a>
+  <!-- menu component -->
+  <ul class="menu" role="menu">
+    <li class="menu-item dropdown" role="menuitem">
+        <a class="dropdown-toggle" tabindex="0" aria-haspopup="true" aria-expanded="true">Menu 1 <i class="icon icon-caret"></i></a>
+        <ul class="menu submenu" role="menu">
+            <li class="menu-item" role="menuitem">Submenu 1</li>
+            <li class="menu-item" role="menuitem">
+                <a title="Decrease Font Size" href="#1">Submenu 2</a>
+            </li>
+            <li class="menu-item" role="menuitem">
+                <a title="Increase Font Size" href="#2">Submenu 3</a>
+            </li>
+        </ul>
+    </li>
+    <li class="menu-item dropdown" role="menuitem">
+        <a class="dropdown-toggle" tabindex="0" aria-haspopup="true" aria-expanded="true">Menu 2 <i class="icon icon-caret"></i></a>
+        <ul class="menu submenu" role="menu">
+            <li class="menu-item" role="menuitem">Submenu 1</li>
+            <li class="menu-item" role="menuitem">
+                <a title="Decrease Font Size" href="#3">Submenu 2</a>
+            </li>
+            <li class="menu-item" role="menuitem">
+                <a title="Increase Font Size" href="#4">Submenu 3</a>
+            </li>
+        </ul>
+    </li>
+    <li class="menu-item" role="menuitem"><a href="#5">Menu 3</a></li>
+  </ul>
+</div> 

@@ -1,5 +1,3 @@
-/* scss/readme/_settings.scss */
-/* scss/readme/_sidebars.scss */
 /* scss/base/_basestyles.scss */
 .text-primary {
   color: #5755d9; }
@@ -1018,30 +1016,6 @@ a.text-error:visited {
     opacity: 1;
     transform: translateY(0); } }
 
-.dropdown {
-  display: inline-block;
-  position: relative; }
-  .dropdown .menu {
-    animation: slide-down .15s ease 1;
-    display: none;
-    left: 0;
-    max-height: 50vh;
-    overflow-y: auto;
-    position: absolute;
-    top: 100%; }
-  .dropdown.dropdown-right .menu {
-    left: auto;
-    right: 0; }
-  .dropdown.active .menu,
-  .dropdown .dropdown-toggle:focus + .menu,
-  .dropdown .dropdown-toggle:hover + .menu,
-  .dropdown .menu:hover {
-    display: block;
-    position: relative; }
-  .dropdown .btn-group .dropdown-toggle:nth-last-child(2) {
-    border-bottom-right-radius: 0.1rem;
-    border-top-right-radius: 0.1rem; }
-
 *,
 *::before,
 *::after {
@@ -1943,27 +1917,114 @@ video.video-responsive {
     color: #667189;
     margin-top: 0.4rem; }
 
-/* scss/molecules/_ministercard.scss */
-.profile {
-  text-align: center;
-  background: #fff;
-  display: flex;
-  flex-direction: column; }
-  .profile .profile-img,
-  .profile .profile-header,
-  .profile .profile-page-link,
-  .profile .profile-social-link {
-    padding: 0.8rem;
-    padding-bottom: 0; }
-    .profile .profile-img:last-child,
-    .profile .profile-header:last-child,
-    .profile .profile-page-link:last-child,
-    .profile .profile-social-link:last-child {
-      padding-bottom: 0.8rem; }
-  .profile .profile-social-bar {
-    padding-top: 0.8rem;
-    padding-bottom: 0; }
+/* scss/molecules/_accordion.scss */
+.accordion {
+  position: relative; }
+  .accordion input {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0; }
+  .accordion input:checked ~ .accordion-header .icon, .accordion[open] .accordion-header .icon {
+    transform: rotate(90deg); }
+  .accordion input:checked ~ .accordion-body, .accordion[open] .accordion-body {
+    max-height: 50rem; }
+  .accordion .accordion-header {
+    display: block;
+    padding: 0.2rem 0.4rem; }
+    .accordion .accordion-header .icon {
+      transition: all .2s ease; }
+  .accordion .accordion-body {
+    margin-bottom: 0.4rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .2s ease; }
 
+details, summary {
+  display: block; }
+
+/* scss/molecules/_dropdown.scss */
+.menu {
+  box-shadow: 0 0.05rem 0.2rem rgba(69, 77, 93, 0.3);
+  background: #fff;
+  border-radius: 0.1rem;
+  list-style: none;
+  margin: 0;
+  min-width: 180px;
+  padding: 0.4rem;
+  transform: translateY(0.2rem);
+  z-index: 300; }
+  .menu.menu-nav {
+    background: transparent;
+    box-shadow: none; }
+  .menu .menu-item {
+    margin-top: 0;
+    padding: 0 0.4rem;
+    text-decoration: none;
+    user-select: none; }
+    .menu .menu-item > a {
+      border-radius: 0.1rem;
+      color: inherit;
+      display: block;
+      margin: 0 -0.4rem;
+      padding: 0.2rem 0.4rem;
+      text-decoration: none; }
+      .menu .menu-item > a:focus, .menu .menu-item > a:hover {
+        background: #f1f1fc;
+        color: #5755d9; }
+      .menu .menu-item > a:active, .menu .menu-item > a.active {
+        background: #f1f1fc;
+        color: #5755d9; }
+    .menu .menu-item .form-checkbox,
+    .menu .menu-item .form-radio,
+    .menu .menu-item .form-switch {
+      margin: 0.1rem 0; }
+    .menu .menu-item + .menu-item {
+      margin-top: 0.2rem; }
+  .menu .menu-badge {
+    float: right;
+    padding: 0.2rem 0; }
+    .menu .menu-badge .btn {
+      margin-top: -0.1rem; }
+
+.dropdown {
+  display: inline-block;
+  position: relative; }
+  .dropdown .menu {
+    animation: slide-down .15s ease 1;
+    display: none;
+    left: 0;
+    position: absolute;
+    top: 100%; }
+    .dropdown .menu .menu {
+      animation: slide-right .15s ease 1;
+      display: none;
+      left: 180px;
+      position: absolute;
+      top: 0; }
+  .dropdown.active .menu,
+  .dropdown .dropdown-toggle:focus + .menu,
+  .dropdown:focus-within > .menu {
+    display: block; }
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .dropdown .menu {
+      display: block;
+      left: -9999px; }
+    .dropdown .dropdown-toggle:focus + .menu,
+    .dropdown .menu:hover {
+      display: block;
+      left: 0; }
+      .dropdown .dropdown-toggle:focus + .menu .menu,
+      .dropdown .menu:hover .menu {
+        left: 160px; } }
+  .dropdown.dropdown-right .menu {
+    left: auto;
+    right: 0; }
+  .dropdown .btn-group .dropdown-toggle:nth-last-child(2) {
+    border-bottom-right-radius: 0.1rem;
+    border-top-right-radius: 0.1rem; }
+
+/* scss/molecules/_accessibilitybar.scss */
 /* scss/molecules/_brandinfo.scss */
 .brandinfo {
   font-size: 0.7rem;
@@ -2001,4 +2062,26 @@ video.video-responsive {
       .department a:first-child {
         text-align: center; } }
 
-/* scss/molecules/_accessibilitybar.scss */
+/* scss/molecules/_ministercard.scss */
+.profile {
+  text-align: center;
+  background: #fff;
+  display: flex;
+  flex-direction: column; }
+  .profile .profile-img,
+  .profile .profile-header,
+  .profile .profile-page-link,
+  .profile .profile-social-link {
+    padding: 0.8rem;
+    padding-bottom: 0; }
+    .profile .profile-img:last-child,
+    .profile .profile-header:last-child,
+    .profile .profile-page-link:last-child,
+    .profile .profile-social-link:last-child {
+      padding-bottom: 0.8rem; }
+  .profile .profile-social-bar {
+    padding-top: 0.8rem;
+    padding-bottom: 0; }
+
+/* scss/readme/_settings.scss */
+/* scss/readme/_sidebars.scss */

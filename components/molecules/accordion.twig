@@ -1,0 +1,67 @@
+<!-- components/molecules/accordion.twig -->
+
+<ul class="radiogroup" id="rg1"  role="radiogroup" aria-labelledby="rg1_label">
+  <li id="r1"  tabindex="0" role="radio" aria-checked="true">
+    <img role="presentation" src="radio-unchecked.gif" /> Thai
+  </li>
+  <li id="r2"  tabindex="0" role="radio"  aria-checked="true">
+    <img role="presentation" src="radio-unchecked.gif" /> Subway
+  </li>
+  <li id="r3"   tabindex="0" role="radio" aria-checked="true">
+    <img role="presentation" src="radio-checked.gif" /> Radio Maria
+  </li>
+</ul>
+
+<div class="accordion">
+  <input id="accordion-1" type="radio" name="accordion-radio" checked="" aria-expanded="true" role="button">
+  <label class="accordion-header c-hand" for="accordion-1"><i class="icon icon-arrow-right mr-1"></i>
+  Elements
+  </label>
+  <div class="accordion-body">
+    <ul class="menu menu-nav">
+      <li class="menu-item"><a href="#accordions">Element 1</a></li>
+      <li class="menu-item"><a href="#accordions">Element 2</a></li>
+    </ul>
+  </div>
+</div>
+<div class="accordion">
+  <input id="accordion-2" type="radio" name="accordion-radio" aria-expanded="true" role="button">
+  <label class="accordion-header c-hand" for="accordion-2"><i class="icon icon-arrow-right mr-1"></i>Layout</label>
+  <div class="accordion-body">
+    <ul class="menu menu-nav">
+      <li class="menu-item"><a href="#accordions">Layout 1</a></li>
+      <li class="menu-item"><a href="#accordions">Layout 2</a></li>
+    </ul>
+  </div>
+</div>
+<div class="accordion">
+  <input id="accordion-3" type="radio" name="accordion-radio" aria-expanded="true" role="button">
+  <label class="accordion-header c-hand" for="accordion-3"><i class="icon icon-arrow-right mr-1"></i>Components</label>
+  <div class="accordion-body">
+    <ul class="menu menu-nav">
+      <li class="menu-item"><a href="#accordions">Component 1</a></li>
+      <li class="menu-item"><a href="#accordions">Component 2</a></li>
+    </ul>
+  </div>
+</div>
+
+
+<details class="accordion" open>
+  <summary class="accordion-header" role="button" aria-expanded="true">
+    <i class="icon icon-arrow-right mr-1"></i>Components
+  </summary>
+  <div class="accordion-body">
+    <!-- Accordions content -->
+    First Accordion Content
+  </div>
+</details>
+
+<details class="accordion" >
+  <summary class="accordion-header" role="button" aria-expanded="true" open>
+    <i class="icon icon-arrow-right mr-1"></i>Components
+  </summary>
+  <div class="accordion-body">
+    <!-- Accordions content -->
+    First Accordion Content
+  </div>
+</details>

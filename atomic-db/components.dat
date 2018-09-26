@@ -20,7 +20,7 @@
         "category": "atoms",
         "description": "Default button",
         "backgroundColor": "",
-        "order": 3,
+        "order": 4,
         "has_js": "true"
     },
     {
@@ -28,7 +28,7 @@
         "category": "atoms",
         "description": "This is sample headings",
         "backgroundColor": "",
-        "order": 0,
+        "order": 1,
         "has_js": "true"
     },
     {
@@ -44,7 +44,7 @@
         "category": "atoms",
         "description": "This paragraph examples",
         "backgroundColor": "",
-        "order": 1,
+        "order": 2,
         "has_js": "true"
     },
     {
@@ -52,7 +52,7 @@
         "category": "atoms",
         "description": "These are list item styles",
         "backgroundColor": "",
-        "order": 5,
+        "order": 6,
         "has_js": "true"
     },
     {
@@ -60,7 +60,7 @@
         "category": "atoms",
         "description": "This is example of Table elements",
         "backgroundColor": "",
-        "order": 6,
+        "order": 7,
         "has_js": "false"
     },
     {
@@ -68,7 +68,7 @@
         "category": "atoms",
         "description": "These are form elements",
         "backgroundColor": "",
-        "order": 4,
+        "order": 5,
         "has_js": "false"
     },
     {
@@ -76,7 +76,7 @@
         "category": "atoms",
         "description": "These are Media examples",
         "backgroundColor": "",
-        "order": 7,
+        "order": 8,
         "has_js": "false"
     },
     {
@@ -84,7 +84,7 @@
         "category": "atoms",
         "description": "This is a Blockquote",
         "backgroundColor": "",
-        "order": 2,
+        "order": 3,
         "has_js": "false"
     },
     {
@@ -92,7 +92,7 @@
         "category": "molecules",
         "description": "This is the Card design of Minister's photo",
         "backgroundColor": "",
-        "order": -10,
+        "order": 4,
         "has_js": "false"
     },
     {
@@ -100,7 +100,7 @@
         "category": "molecules",
         "description": "Information of Ministry or Department",
         "backgroundColor": "",
-        "order": -11,
+        "order": 3,
         "has_js": "false"
     },
     {
@@ -108,7 +108,23 @@
         "category": "molecules",
         "description": "This is a bar containing all accessibility feature",
         "backgroundColor": "",
-        "order": -12,
+        "order": 2,
+        "has_js": "false"
+    },
+    {
+        "component": "accordion",
+        "category": "molecules",
+        "description": "An Accordion element",
+        "backgroundColor": "",
+        "order": 0,
+        "has_js": "false"
+    },
+    {
+        "component": "dropdown",
+        "category": "molecules",
+        "description": "a Dropdown Component",
+        "backgroundColor": "",
+        "order": 1,
         "has_js": "false"
     }
 ]
